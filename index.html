@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Material Library</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/site.css"/>
+        <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-46399763-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>           
+    </head>
+    <body>
+        <div class="container">
+            <div class="row header">
+                <h1>Material Library</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12 button-group filter-button-group">
+                    <span class="filtertext">Filter for colour: </span><button class="filterbutton highlight" data-filter="*">Show All</button>
+                </div>
+                <div class="col-md-12 button-group filter-button-group-comp">
+                    <span class="filtertext">Filter for material: </span><button class="filterbutton highlight" data-filter="*">Show All</button>
+                </div>
+            </div>            
+            <div id="grid">
+                                              
+            </div>            
+        </div>
+        <div class="modal" id="detailModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 id="modal_title" class="modal-title">Modal title</h5>
+              </div>
+              <div class="modal-body">
+                <p id="supplier"></p>
+                <p id="composition"></p>
+                <p id="weight"></p>
+                <p id="weave"></p>
+                <p id="notes"></p>
+                <div id="speeds"></div>
+                <p id="detailimage"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/site.js"></script>
+    </body>
+</html>
