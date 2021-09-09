@@ -51,7 +51,7 @@ function generateGrid(data){
 		tags.forEach(function(tag){
 			classes += ' '+tag.replace(' ','_').toLowerCase();
 		});
-		var html = '<div id="grid'+i+'" class="'+classes+'"><div class="inner"><img id="image'+i+'" src="/images/'+d['Photo name']+'" /><div id="overlay'+i+'" class="overlay">';
+		var html = '<div id="grid'+i+'" class="'+classes+'"><div class="inner"><img id="image'+i+'" src="images/'+d['Photo name']+'" /><div id="overlay'+i+'" class="overlay">';
 		html+='<h3 class="grid-title">'+d['Material Name']+'</h3><p class="overlaydesc">'+d['Supplier']+'</p>';
 		html+='<p class="overlaydesc">Laser Etch: S'+d['Laser etch power']+' '+d['Laser etch speed']+'F</p>';
 		html+='<p class="overlaydesc">Laser Etch: S'+d['Laser cut power']+' '+d['Laser cut speed']+'F</p>';
@@ -92,7 +92,7 @@ function showModal(d){
 	$('#weight').html('Weight: '+d.Weight);
 	$('#weave').html('Weave: '+d.Weave);
 	$('#modal_title').html(d['Material Name']);
-	$('#detailimage').html('<img src="/images/'+d['Photo name 2']+'"  width="100%">');
+	$('#detailimage').html('<img src="images/'+d['Photo name 2']+'"  width="100%">');
 }
 
 function generateButtons(data){
